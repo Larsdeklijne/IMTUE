@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+/* titel tekst */
+#titelTekstBestelformulier{
+  float: top;
+  padding: auto;
+  font-style: normal;
+  font-size: 15px;
+  color: #E60000;
+}
+
+#titelBestelformulier{
+  float: bottom;
+  padding: auto;
+  font-style: normal;
+  font-size: 24px;
+  color: #E60000;
+}
+
+.titelContainer{
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+
+.titelWrapper{
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 90px;
+  text-align: center;
+  padding-top: 1px;
+}
+
+
+
+
+/* Bestlformulier */
+
+
+
+/* buttons kleur optie */
+
+#kleurOptie1{
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
+
+#kleurOptie2{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+
+#kleurOptie3{
+  width: 30px;
+  height: 30px;
+  background-color: 	#1E90FF;
+}
+
+
+/* container telefoon opties */
+
+.containerTelefoonOpties{
+  padding-bottom: 30px;
+}
+
+
+/* container opties abbonement */
+
+.containerAbbonementOpties{
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+/* looptijd buttons */
+
+#looptijd1{
+  background: #f4f4f4;
+  border: 1px #d8d8d8 solid;
+  box-sizing: border-box;
+  margin-right: 16px;
+  padding: 0 15px;
+  line-height: 30px;
+  width: 82px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#looptijd2{
+  background: #f4f4f4;
+  border: 1px #d8d8d8 solid;
+  box-sizing: border-box;
+  margin-right: 16px;
+  padding: 0 15px;
+  line-height: 30px;
+  width: 82px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#beldatabundel{
+  padding-top: 15px;
+}
+
+#nummerbehoud{
+  padding-top: 15px;
+}
+
+#nummerbehoudTekst{
+  padding-bottom: 15px;
+}
+
+
+.woongegevens{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+#woonplaats{
+  padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* Afbeelding telefoon bestelformulier */
+
+#afbeeldingTelefoonBestelformulier{
+  margin: auto;
+  width: 200px;
+  height: 475px;
+}
+
+.containerTelefoonBestelformulier{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+/* Bestelformulier */
+
+#nummerbehoudTekst{
+  margin-bottom: 25px;
+}
+
+
+/* voortgang bestelling balk */
+
+.voortgangBestelling{
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+/* foutmelding */
+#foutmelding{
+  color: red;
+}
+
+
+/* Samenvatting bestelling */
+
+.samenvattingBestelling{
+  padding-top: 20px;
+}
+
+#tekstSamenvattingBestelling{
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+#samenvattingBestellingNaam{
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+
+/* buttons bestelpagina */
+
+.bestelformulierButtons{
+  text-align: center;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.buttonInloggen{
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 21px;
+  background: #666666;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  right: 0;
+  float: right;
+}
+
+.buttonRegistreren{
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 21px;
+  background: #9C2AA0;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  float: left;
+}
+
+
+
+
+
+
+
+
+/* Column container */
+.row {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  float: bottom;
+  padding-bottom: 50px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 50%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 50%;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .row, .navbar {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .titelContainer{
+    width: 100%;
+  }
+
+  .containerTelefoonOpties{
+      margin: 10px;
+  }
+
+  .containerAbbonementOpties{
+    width: 103%;
+  }
+
+  .row, .navbar {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+}

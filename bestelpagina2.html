@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IMTUE - Herkansing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bestelpagina.css">
+<script src="js/main.js"></script>
+
+</head>
+<body>
+
+  <div class="headerContainer">
+
+    <p> MyPhone </p>
+
+  </div>
+
+  <div class="titelWrapper">
+
+    <div class="titelContainer">
+
+            <p id="titelTekstBestelformulier">Je bent hier: Shop / Mobiel / Pakket </p>
+            <h1 id="titelBestelformulier"> Toestel met abbonement </h1>
+
+    </div>
+
+
+
+  </div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+
+
+  <div class="main">
+
+    <div class="containerTelefoonOpties">
+      <h2 id="telefoonTitel">Apple Iphone XR 128 GB blauw</h2>
+
+      <div class="kleurOpties">
+        <div class="tekstKleurOpties"> Kleur </div>
+        <button id="kleurOptie1"> </button>
+        <button id="kleurOptie2"> </button>
+        <button id="kleurOptie3"> </button>
+      </div>
+    </div>
+
+    <div class="containerAbbonementOpties">
+
+      <h4>Looptijd </h4>
+
+      <button id="looptijd1"> 1 jaar </button>
+      <button id="looptijd2"> 2 jaar </button>
+
+      <h4 id="beldatabundel">Bel- en databundel </h4>
+
+      <select>
+          <option value="1">1GB & 100 belminuten</option>
+          <option value="2">1GB & 200 belminuten</option>
+          <option value="3">10 GB & 200 belminuten</option>
+          <option value="4">20 GB & 500 belminuten</option>
+      </select>
+
+
+
+      <h4 id="nummerbehoud">Nummerbehoud <h4>
+      <input id="nummerbehoudTekst" type="checkbox" name="nummerbehoud" value="Ja" onclick="veranderVoortgang()"> Ja, ik wil mijn nummer behouden </br>
+
+      <form class="woongegevens">
+          <p id="woonplaats">Woonplaats:<br> </p>
+          <input  type="text" name="woonplaats" value="Amsterdam">
+          <br>
+          <p> </p>
+          <p id="adres"> Adres:<br> </p>
+          <input type="text" name="adres" value="Stationsweg 5">
+          <br><br>
+
+      </form>
+
+      <div class="voortgangBestelling">
+        <p> Voortgang bestelling </p> <progress id="voortgangsBalk" value="25" max="100"> </progress>
+      </div>
+
+      <h4 id="foutmelding" style="display:none"> Vul het complete formulier in om verder te gaan! </h4>
+
+      <div class="samenvattingBestelling">
+        <h4> Samenvatting bestelling </h4>
+        <p id="samenvattingBestellingNaam">Apple Iphone XR 128 GB blauw</p>
+        <p id="tekstSamenvattingBestelling">Bel- en databundel: 1GB & 100 belminuten</p>
+        <p id="tekstSamenvattingBestelling">Looptijd: 1 jaar</p>
+        <p id="tekstSamenvattingBestelling">Nummerbehoud: Ja</p>
+      </div>
+
+
+
+      <div class="bestelformulierButtons">
+        <button class="buttonRegistreren" onclick="foutmelding()">Registreren</button>
+        <button class="buttonInloggen" onclick="foutmelding()">Inloggen</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="side">
+
+    <div class="containerTelefoonBestelformulier">
+      <img id="afbeeldingTelefoonBestelformulier" src=img/telefoon2.png > </img>
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+</body>
+</html>
